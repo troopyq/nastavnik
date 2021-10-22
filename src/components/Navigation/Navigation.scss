@@ -1,3 +1,6 @@
+@import '/src/assets/scss/colors';
+@import '/src/assets/scss/help';
+
 .Navigation {
 	display: flex;
 	flex-direction: column;
@@ -5,20 +8,21 @@
 	flex: 0 0 12%;
 }
 .Navigation_list {
+	display: flex;
+	flex-direction: column;
 	list-style: none;
+	gap: 15px;
 }
 .Navigation_anchor {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-bottom: 15px;
+	justify-content: space-between;
 	padding: 10px 7px;
-	width: 100px;
+	width: 120px;
 
-	border-radius: 10px;
-	box-shadow: 0 3px 5px rgba($color: #000000, $alpha: 0.12),
-		0 3px 20px rgba($color: #000000, $alpha: 0.06);
-	border: 1px solid rgba($color: #1a1a1a, $alpha: 0.1);
+	@extend %block;
+
 	cursor: pointer;
 	transition: all 0.1s, transform 0.2s ease;
 	img {
@@ -37,7 +41,35 @@
 
 	&:hover {
 		transform: translateX(5px);
-		box-shadow: 0 3px 7px rgba($color: #000000, $alpha: 0.15),
-			0 3px 25px rgba($color: #000000, $alpha: 0.09);
+		box-shadow: 0 3px 7px rgba($color: #000000, $alpha: 0.12),
+			0 3px 25px rgba($color: #000000, $alpha: 0.07);
+	}
+}
+
+@media (max-width: 1000px) {
+	.Navigation {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 100%;
+	}
+	.Navigation_list {
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+		overflow-x: auto;
+		padding: 15px 20px;
+		margin: -20px;
+	}
+	.Navigation_anchor {
+		height: 100%;
+	}
+}
+@media (max-width: 700px) {
+	.Navigation_anchor {
+		width: 110px;
+		p {
+			font-size: 1.1rem;
+		}
 	}
 }

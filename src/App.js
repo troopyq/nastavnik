@@ -1,16 +1,36 @@
 import { useEffect, useState } from 'react';
 import { Navigation, SideAvatar } from './components';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { MasterPage, TasksPage, ThreePage, MainPage } from './pages';
+
+import './assets/scss/index.scss';
 
 function App() {
 	return (
-		<div className='wrapper'>
-			<Navigation />
+		<Router>
+			<div className='wrapper'>
+				<Navigation />
 
-			<div className='content'></div>
+				<div className='content'>
+					<Switch>
+						<Route exact path='/'>
+							<MainPage />
+						</Route>
+						<Route path='/tasks'>
+							<TasksPage />
+						</Route>
+						<Route path='/master'>
+							<MasterPage />
+						</Route>
+						<Route path='/nastavnikan'>
+							<ThreePage />
+						</Route>
+					</Switch>
+				</div>
 
-			<SideAvatar />
-		</div>
+				<SideAvatar />
+			</div>
+		</Router>
 	);
 }
 

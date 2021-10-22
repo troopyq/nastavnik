@@ -1,16 +1,27 @@
 import React from 'react';
+import NavButton from './NavButton';
+// import { BrowserRouter as NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Navigation.scss';
 
 import Test from './icons/test.png';
-import NavButton from './NavButton';
 
 function Navigation() {
 	return (
 		<nav className='Navigation'>
 			<ul className='Navigation_list'>
-				<NavButton img={Test} title='Задания' />
-				<NavButton img={Test} title='Наставникам' />
-				<NavButton img={Test} title='Мастер-класс' />
+				<NavLink exact to='/'>
+					<NavButton img={Test} title='Главная' />
+				</NavLink>
+				<NavLink exact to='/tasks'>
+					<NavButton img={Test} title='Задания' />
+				</NavLink>
+				<NavLink exact to='/master'>
+					<NavButton img={Test} title='Наставникам' />
+				</NavLink>
+				<NavLink exact to='/nastavnikan'>
+					<NavButton img={Test} title='Мастер-класс' />
+				</NavLink>
 			</ul>
 		</nav>
 	);

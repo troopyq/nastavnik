@@ -1,0 +1,42 @@
+@import '/src/assets/scss/colors';
+@import '/src/assets/scss/help';
+
+.Modal {
+	// display: none;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+.ModalActive {
+	display: block;
+}
+.ModalWindow {
+	@extend %block;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	padding: 40px;
+	width: 800px;
+	min-height: 300px;
+	background-color: #fff;
+}
+.ModalClose {
+	font-size: 3rem;
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	cursor: pointer;
+	color: #e63e3e;
+	&:hover {
+		text-shadow: 0 0 17px rgba($color: #e63e3e, $alpha: 0.7);
+	}
+}
