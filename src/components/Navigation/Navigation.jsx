@@ -10,16 +10,16 @@ function Navigation() {
 	return (
 		<nav className='Navigation'>
 			<ul className='Navigation_list'>
-				<NavLink exact to='/'>
+				<NavLink exact to='/nastavnik/'>
 					<NavButton img={Test} title='Главная' />
 				</NavLink>
-				<NavLink exact to='/tasks'>
+				<NavLink exact to='/nastavnik/tasks'>
 					<NavButton img={Test} title='Задания' />
 				</NavLink>
-				<NavLink exact to='/master'>
+				<NavLink exact to='/nastavnik/master'>
 					<NavButton img={Test} title='Наставникам' />
 				</NavLink>
-				<NavLink exact to='/nastavnikan'>
+				<NavLink exact to='/nastavnik/nastavnikan'>
 					<NavButton img={Test} title='Мастер-класс' />
 				</NavLink>
 			</ul>
