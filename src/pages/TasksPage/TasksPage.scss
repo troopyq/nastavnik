@@ -5,19 +5,19 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: 20px 20px;
+	gap: 30px;
 
 	.social {
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		gap: 20px 20px;
+		gap: 25px;
 	}
 }
 .TaskBlock {
 	text-align: center;
-	flex: 0 0 22%;
+	flex: 0 0 25%;
 	padding: 10px;
 
 	@extend %block;
@@ -28,7 +28,7 @@
 
 	img {
 		width: 85%;
-		padding: 5px;
+		padding: 10px;
 		margin-bottom: 7px;
 		transition: all 0.1s, transform 0.2s ease;
 	}
