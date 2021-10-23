@@ -21,7 +21,7 @@
 }
 .TaskBlock {
 	text-align: center;
-	flex: 0 0 22%;
+	flex: 0 0 29%;
 	padding: 10px;
 
 	@extend %block;
@@ -31,7 +31,7 @@
 	cursor: pointer;
 
 	img {
-		width: 100%;
+		width: 85%;
 		margin-bottom: 7px;
 		transition: all 0.1s, transform 0.2s ease;
 	}
@@ -48,7 +48,7 @@
 			0 3px 25px rgba($color: #000000, $alpha: 0.03);
 
 		img {
-			transform: scale(1.2);
+			transform: scale(1.15);
 		}
 	}
 }
