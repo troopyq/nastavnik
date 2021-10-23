@@ -34,9 +34,9 @@
 	@extend %block;
 	z-index: 100;
 	position: relative;
-	left: 50%;
-	top: 0%;
-	transform: translate(-50%, 0%);
+	// left: 50%;
+	// top: 0%;
+	// transform: translateX(-50%);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
