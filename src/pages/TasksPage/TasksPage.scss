@@ -13,19 +13,11 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		gap: 20px 20px;
-
-		.TaskBlock {
-			flex: 0 0 29%;
-
-			img {
-				padding: 0;
-			}
-		}
 	}
 }
 .TaskBlock {
 	text-align: center;
-	flex: 0 0 29%;
+	flex: 0 0 22%;
 	padding: 10px;
 
 	@extend %block;
@@ -36,7 +28,7 @@
 
 	img {
 		width: 85%;
-		padding: 25px;
+		padding: 5px;
 		margin-bottom: 7px;
 		transition: all 0.1s, transform 0.2s ease;
 	}

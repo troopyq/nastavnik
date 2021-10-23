@@ -14,10 +14,9 @@ import Type43 from './Modals/Type43';
 import typesModal from './typesModal';
 import './TasksPage.scss';
 
-import instagram from './icons/instagram.png';
-import youtube from './icons/youtube.png';
-import info from '../../components/Navigation/icons/info.png';
-import telegram from './icons/telegram.png';
+import instagram from './icons/instagram2.png';
+import youtube from './icons/youtube2.png';
+import telegram from './icons/telegram2.png';
 import i21 from './Modals/icons/21.png';
 import i22 from './Modals/icons/22.png';
 import i23 from './Modals/icons/23.png';
@@ -50,11 +49,9 @@ function TasksPage() {
 	return (
 		<>
 			<div className='TasksList'>
-				<div className='social'>
-					<TaskBlock onClick={() => openModal(typesModal.inst)} img={instagram} />
-					<TaskBlock onClick={() => openModal(typesModal.youtube)} img={youtube} />
-					<TaskBlock onClick={() => openModal(typesModal.telegram)} img={telegram} />
-				</div>
+				<TaskBlock onClick={() => openModal(typesModal.inst)} img={instagram} />
+				<TaskBlock onClick={() => openModal(typesModal.youtube)} img={youtube} />
+				<TaskBlock onClick={() => openModal(typesModal.telegram)} img={telegram} />
 				<TaskBlock onClick={() => openModal2('21')} img={i21} />
 				<TaskBlock onClick={() => openModal2('22')} img={i22} />
 				<TaskBlock onClick={() => openModal2('23')} img={i23} />
