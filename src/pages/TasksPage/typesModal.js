@@ -6,7 +6,7 @@ const typesModal = {
 			answer: true,
 		},
 		right: {
-			img: './images/inst/lose.jpg',
+			img: './images/inst/lose-big.jpg',
 			answer: false,
 		},
 	},

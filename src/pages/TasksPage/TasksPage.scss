@@ -16,6 +16,10 @@
 
 		.TaskBlock {
 			flex: 0 0 29%;
+
+			img {
+				padding: 0;
+			}
 		}
 	}
 }
@@ -32,6 +36,7 @@
 
 	img {
 		width: 85%;
+		padding: 25px;
 		margin-bottom: 7px;
 		transition: all 0.1s, transform 0.2s ease;
 	}

@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Navigation, SideAvatar } from './components';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, HashRouter } from 'react-router-dom';
 import { MasterPage, TasksPage, ThreePage, MainPage } from './pages';
 
 import './assets/scss/index.scss';
 
 function App() {
 	return (
-		<Router>
+		<HashRouter>
 			<div className='wrapper'>
 				<Navigation />
 
@@ -30,7 +30,7 @@ function App() {
 
 				<SideAvatar />
 			</div>
-		</Router>
+		</HashRouter>
 	);
 }
 

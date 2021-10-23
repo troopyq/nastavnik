@@ -18,6 +18,15 @@ import instagram from './icons/instagram.png';
 import youtube from './icons/youtube.png';
 import info from '../../components/Navigation/icons/info.png';
 import telegram from './icons/telegram.png';
+import i21 from './Modals/icons/21.png';
+import i22 from './Modals/icons/22.png';
+import i23 from './Modals/icons/23.png';
+import i31 from './Modals/icons/31.png';
+import i32 from './Modals/icons/32.png';
+import i33 from './Modals/icons/33.png';
+import i41 from './Modals/icons/41.png';
+import i42 from './Modals/icons/42.png';
+import i43 from './Modals/icons/43.png';
 
 function TasksPage() {
 	const [modal, setModal] = useState(null);
@@ -46,15 +55,15 @@ function TasksPage() {
 					<TaskBlock onClick={() => openModal(typesModal.youtube)} img={youtube} />
 					<TaskBlock onClick={() => openModal(typesModal.telegram)} img={telegram} />
 				</div>
-				<TaskBlock onClick={() => openModal2('21')} img={info} />
-				<TaskBlock onClick={() => openModal2('22')} img={info} />
-				<TaskBlock onClick={() => openModal2('23')} img={info} />
-				<TaskBlock onClick={() => openModal2('31')} img={info} />
-				<TaskBlock onClick={() => openModal2('32')} img={info} />
-				<TaskBlock onClick={() => openModal2('33')} img={info} />
-				<TaskBlock onClick={() => openModal2('41')} img={info} />
-				<TaskBlock onClick={() => openModal2('42')} img={info} />
-				<TaskBlock onClick={() => openModal2('43')} img={info} />
+				<TaskBlock onClick={() => openModal2('21')} img={i21} />
+				<TaskBlock onClick={() => openModal2('22')} img={i22} />
+				<TaskBlock onClick={() => openModal2('23')} img={i23} />
+				<TaskBlock onClick={() => openModal2('31')} img={i31} />
+				<TaskBlock onClick={() => openModal2('32')} img={i32} />
+				<TaskBlock onClick={() => openModal2('33')} img={i33} />
+				<TaskBlock onClick={() => openModal2('41')} img={i41} />
+				<TaskBlock onClick={() => openModal2('42')} img={i42} />
+				<TaskBlock onClick={() => openModal2('43')} img={i43} />
 			</div>
 			{modal ? <Modal status={{ setModal }} type={modal} /> : null}
 			{other === '21' ? (
