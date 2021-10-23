@@ -19,10 +19,10 @@ function App() {
 						<Route path='/nastavnik/tasks'>
 							<TasksPage />
 						</Route>
-						<Route path='/nastavnik/master'>
+						<Route path='/nastavnik/toolbox'>
 							<MasterPage />
 						</Route>
-						<Route path='/nastavnik/nastavnikan'>
+						<Route path='/nastavnik/info'>
 							<ThreePage />
 						</Route>
 					</Switch>

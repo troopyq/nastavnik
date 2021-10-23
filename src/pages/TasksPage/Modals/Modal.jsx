@@ -17,7 +17,6 @@ function Modal(props) {
 			break;
 		case 'Опрос':
 			ModalContent = <TypeThree />;
-			ModalContent = <TypeThree />;
 			break;
 	}
 
@@ -27,12 +26,10 @@ function Modal(props) {
 
 	useEffect(() => {
 		document.body.style.overflow = 'hidden';
-		// document.body.style.paddingRight = '16px';
 		return () => {
 			document.body.style = '';
 		};
 	}, []);
-
 	return (
 		<div className={`Modal`}>
 			<div className='ModalWindow'>

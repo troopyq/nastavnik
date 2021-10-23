@@ -4,7 +4,7 @@ function TaskBlock({ img, title, onClick }) {
 	return (
 		<div onClick={onClick} className='TaskBlock'>
 			<img src={img} alt='' />
-			<p>{title}</p>
+			{title ? <p>{title}</p> : null}
 		</div>
 	);
 }

@@ -1,26 +1,32 @@
 import React from 'react';
 import NavButton from './NavButton';
 // import { BrowserRouter as NavLink } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import './Navigation.scss';
 
-import Test from './icons/test.png';
+import home from './icons/home.png';
+import task from './icons/task.png';
+import toolbox from './icons/toolbox.png';
+import info from './icons/info.png';
 
 function Navigation() {
 	return (
 		<nav className='Navigation'>
 			<ul className='Navigation_list'>
 				<NavLink exact to='/nastavnik/'>
-					<NavButton img={Test} title='Главная' />
+					<NavButton img={home} title='Главная' />
 				</NavLink>
 				<NavLink exact to='/nastavnik/tasks'>
-					<NavButton img={Test} title='Задания' />
+					<NavButton img={task} title='Задания' />
 				</NavLink>
-				<NavLink exact to='/nastavnik/master'>
-					<NavButton img={Test} title='Наставникам' />
-				</NavLink>
-				<NavLink exact to='/nastavnik/nastavnikan'>
-					<NavButton img={Test} title='Мастер-класс' />
+				<a
+					target='_blank'
+					href='https://jamboard.google.com/d/1G1P8T7HqB-nt3onm4gNZVWGD5vYDm9KUhPcVgWO403k/edit?usp=sharing'>
+					<NavButton img={toolbox} title='Тулбокс' />
+				</a>
+
+				<NavLink exact to='/nastavnik/info'>
+					<NavButton img={info} title='Полезная информация' />
 				</NavLink>
 			</ul>
 		</nav>

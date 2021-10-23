@@ -20,6 +20,9 @@ body {
 	font-size: 1.8rem;
 	color: #131313;
 }
+a {
+	text-decoration: none;
+}
 
 p > a {
 	color: inherit;
@@ -34,6 +37,7 @@ p > a {
 	max-width: 1500px;
 	gap: 25px;
 	justify-content: space-between;
+	// align-items: flex-start;
 	margin: 0 auto;
 	padding: 30px 18px;
 }
