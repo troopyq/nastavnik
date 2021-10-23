@@ -1,33 +1,53 @@
 @import '/src/assets/scss/colors';
 @import '/src/assets/scss/help';
 
+@keyframes openModal {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 .Modal {
 	// display: none;
-	overflow: hidden;
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: rgba(0, 0, 0, 0.2);
+	padding: 20px 10px;
+	min-width: 100vw;
+	min-height: 1000vh;
+	// display: flex;
+	// justify-content: center;
+	// align-items: center;
+	background-color: rgba(0, 0, 0, 0.35);
+
+	opacity: 0;
+	transition: opacity 0.35s;
+	animation: openModal 0.35s ease 1 forwards;
 }
 .ModalActive {
 	display: block;
 }
 .ModalWindow {
 	@extend %block;
+	z-index: 100;
 	position: relative;
+	left: 50%;
+	top: 0%;
+	transform: translate(-50%, 0%);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin: 0 auto;
 	padding: 40px;
-	width: 800px;
+	min-width: 300px;
+	max-width: 1000px;
 	min-height: 300px;
 	background-color: #fff;
+	max-height: calc(100vh - 80px);
+	overflow-y: auto;
 }
 .ModalClose {
 	font-size: 3rem;
@@ -38,5 +58,94 @@
 	color: #e63e3e;
 	&:hover {
 		text-shadow: 0 0 17px rgba($color: #e63e3e, $alpha: 0.7);
+	}
+}
+
+.ModalContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h2 {
+		margin-bottom: 20px;
+	}
+}
+.ModalContentImg {
+	width: 65%;
+	margin: 10px;
+}
+
+.vs {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.vsBlock {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-self: stretch;
+	align-items: center;
+
+	width: 43%;
+}
+.vsImg {
+	width: 100%;
+	cursor: pointer;
+	margin-bottom: 35px;
+	border-radius: 10px;
+	transition: all 0.1s;
+	&:hover {
+		box-shadow: 0 0px 19px 2px rgba($color: #0fd8df, $alpha: 0.8);
+		border: none;
+	}
+}
+.vsSpan {
+	font-size: 3rem;
+	font-weight: 800;
+	padding: 7px;
+}
+.answer {
+	opacity: 0;
+	width: 70px;
+	height: 70px;
+	transform: scale(0);
+	transition: all 0.25s ease;
+
+	&Icon {
+		width: 100%;
+	}
+}
+.answer.active {
+	opacity: 1;
+	transform: scale(1);
+}
+
+/* полоса прокрутки (скроллбар) */
+.ModalWindow::-webkit-scrollbar {
+	width: 8px; /* ширина для вертикального скролла */
+	height: 8px; /* высота для горизонтального скролла */
+	background-color: transparent;
+}
+
+/* ползунок скроллбара */
+.ModalWindow::-webkit-scrollbar-thumb {
+	background-color: #413e3e;
+	border-radius: 50px;
+	box-shadow: inset 1px 1px 10px #f3faf7;
+}
+
+.ModalWindow::-webkit-scrollbar-thumb:hover {
+	background-color: #4d5b7a;
+}
+
+@media (max-width: 550px) {
+	.vs {
+		flex-direction: column;
+		justify-content: center;
+		gap: 30px;
+	}
+	.vsBlock {
+		flex: 1 0 100%;
+		width: 100%;
 	}
 }

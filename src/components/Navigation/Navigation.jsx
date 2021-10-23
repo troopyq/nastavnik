@@ -13,10 +13,10 @@ function Navigation() {
 	return (
 		<nav className='Navigation'>
 			<ul className='Navigation_list'>
-				<NavLink exact to='/nastavnik/'>
+				<NavLink exact to='/'>
 					<NavButton img={home} title='Главная' />
 				</NavLink>
-				<NavLink exact to='/nastavnik/tasks'>
+				<NavLink exact to='/tasks'>
 					<NavButton img={task} title='Задания' />
 				</NavLink>
 				<a
@@ -25,7 +25,7 @@ function Navigation() {
 					<NavButton img={toolbox} title='Тулбокс' />
 				</a>
 
-				<NavLink exact to='/nastavnik/info'>
+				<NavLink exact to='/info'>
 					<NavButton img={info} title='Полезная информация' />
 				</NavLink>
 			</ul>

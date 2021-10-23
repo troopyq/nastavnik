@@ -1,6 +1,8 @@
 import React from 'react';
 import './SideAvatar.scss';
 
+import qr from './qr.png';
+
 function SideAvatar() {
 	return (
 		<aside className='SideAvatar'>
@@ -12,13 +14,14 @@ function SideAvatar() {
 				/>
 				<p className='avatar_desc'>
 					Аминова Анастасия Сергеевна
-					<a className='avatar_anchor' href='tel: +79921230909'>
-						+7-992-123-09-09
+					<a className='avatar_anchor' href='tel: +79041704152'>
+						+7-904-170-41-52
 					</a>
 					<a className='avatar_anchor' href='https://vk.com/id7356469'>
 						ВКонтакте
 					</a>
 				</p>
+				<img className='qr' src={qr} alt='' />
 			</div>
 		</aside>
 	);

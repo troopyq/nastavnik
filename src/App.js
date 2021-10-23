@@ -13,16 +13,16 @@ function App() {
 
 				<div className='content'>
 					<Switch>
-						<Route exact path='/nastavnik/'>
+						<Route exact path='/'>
 							<MainPage />
 						</Route>
-						<Route path='/nastavnik/tasks'>
+						<Route path='/tasks'>
 							<TasksPage />
 						</Route>
-						<Route path='/nastavnik/toolbox'>
+						<Route path='/toolbox'>
 							<MasterPage />
 						</Route>
-						<Route path='/nastavnik/info'>
+						<Route path='/info'>
 							<ThreePage />
 						</Route>
 					</Switch>

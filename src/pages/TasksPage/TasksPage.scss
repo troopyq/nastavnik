@@ -6,6 +6,18 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 20px 20px;
+
+	.social {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px 20px;
+
+		.TaskBlock {
+			flex: 0 0 29%;
+		}
+	}
 }
 .TaskBlock {
 	text-align: center;
@@ -50,6 +62,9 @@
 	}
 }
 @media (max-width: 500px) {
+	.TasksList .social {
+		gap: 15px;
+	}
 	.TaskBlock {
 		flex: 0 0 45%;
 	}
