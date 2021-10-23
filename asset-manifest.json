@@ -1,20 +1,26 @@
 {
   "files": {
-    "main.css": "/nastavnik/static/css/main.31083033.chunk.css",
-    "main.js": "/nastavnik/static/js/main.2198fd2f.chunk.js",
-    "main.js.map": "/nastavnik/static/js/main.2198fd2f.chunk.js.map",
+    "main.css": "/nastavnik/static/css/main.b7a3432d.chunk.css",
+    "main.js": "/nastavnik/static/js/main.209c3888.chunk.js",
+    "main.js.map": "/nastavnik/static/js/main.209c3888.chunk.js.map",
     "runtime-main.js": "/nastavnik/static/js/runtime-main.49d1c6a1.js",
     "runtime-main.js.map": "/nastavnik/static/js/runtime-main.49d1c6a1.js.map",
     "static/js/2.fbfd24cd.chunk.js": "/nastavnik/static/js/2.fbfd24cd.chunk.js",
     "static/js/2.fbfd24cd.chunk.js.map": "/nastavnik/static/js/2.fbfd24cd.chunk.js.map",
     "index.html": "/nastavnik/index.html",
-    "static/css/main.31083033.chunk.css.map": "/nastavnik/static/css/main.31083033.chunk.css.map",
-    "static/js/2.fbfd24cd.chunk.js.LICENSE.txt": "/nastavnik/static/js/2.fbfd24cd.chunk.js.LICENSE.txt"
+    "static/css/main.b7a3432d.chunk.css.map": "/nastavnik/static/css/main.b7a3432d.chunk.css.map",
+    "static/js/2.fbfd24cd.chunk.js.LICENSE.txt": "/nastavnik/static/js/2.fbfd24cd.chunk.js.LICENSE.txt",
+    "static/media/home.e7c939c2.png": "/nastavnik/static/media/home.e7c939c2.png",
+    "static/media/info.2099ad14.png": "/nastavnik/static/media/info.2099ad14.png",
+    "static/media/instagram.d7f06d35.png": "/nastavnik/static/media/instagram.d7f06d35.png",
+    "static/media/tiktok.4b27b978.png": "/nastavnik/static/media/tiktok.4b27b978.png",
+    "static/media/toolbox.8605c193.png": "/nastavnik/static/media/toolbox.8605c193.png",
+    "static/media/youtube.70a44458.png": "/nastavnik/static/media/youtube.70a44458.png"
   },
   "entrypoints": [
     "static/js/runtime-main.49d1c6a1.js",
     "static/js/2.fbfd24cd.chunk.js",
-    "static/css/main.31083033.chunk.css",
-    "static/js/main.2198fd2f.chunk.js"
+    "static/css/main.b7a3432d.chunk.css",
+    "static/js/main.209c3888.chunk.js"
   ]
 }
