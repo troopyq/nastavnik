@@ -65,6 +65,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	width: 100%;
 	h2 {
 		margin-bottom: 20px;
 	}
@@ -120,6 +121,30 @@
 	transform: scale(1);
 }
 
+.ModalLinks {
+	align-items: flex-start;
+}
+.anchor_block {
+	margin: 10px 0;
+	align-items: flex-start;
+}
+.anchor_title {
+	font-weight: bold;
+	color: $text_second;
+	padding: 5px;
+	font-size: 2.1rem;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+.anchor_text {
+	font-size: 2rem;
+}
+.anchor_title-upp {
+	text-transform: uppercase;
+}
+
 /* полоса прокрутки (скроллбар) */
 .ModalWindow::-webkit-scrollbar {
 	width: 8px; /* ширина для вертикального скролла */
@@ -150,5 +175,8 @@
 	}
 	.ModalContentImg {
 		width: 95%;
+	}
+	.ModalWindow {
+		padding: 40px 20px;
 	}
 }

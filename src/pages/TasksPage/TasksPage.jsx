@@ -23,9 +23,9 @@ import i23 from './Modals/icons/23.png';
 import i31 from './Modals/icons/31.png';
 import i32 from './Modals/icons/32.png';
 import i33 from './Modals/icons/33.png';
-import i41 from './Modals/icons/41.png';
-import i42 from './Modals/icons/42.png';
-import i43 from './Modals/icons/43.png';
+import i41 from './Modals/icons/41-n.png';
+import i42 from './Modals/icons/42-n.png';
+import i43 from './Modals/icons/43-n.png';
 
 function TasksPage() {
 	const [modal, setModal] = useState(null);

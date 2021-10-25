@@ -16,6 +16,11 @@
 	}
 }
 .TaskBlock {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
 	text-align: center;
 	flex: 0 0 25%;
 	padding: 10px;
@@ -50,6 +55,16 @@
 	}
 }
 
+.infoLink {
+	flex: 0 0 25%;
+	img {
+		padding: 5px;
+	}
+	p {
+		word-break: normal;
+	}
+}
+
 @media (max-width: 700px) {
 	.TaskBlock {
 		flex: 0 0 30%;
@@ -64,5 +79,8 @@
 	}
 	.TaskBlock {
 		flex: 0 0 45%;
+	}
+	.infoLink {
+		flex: 1 0 45%;
 	}
 }

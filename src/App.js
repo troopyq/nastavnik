@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Navigation, SideAvatar } from './components';
 import { BrowserRouter as Router, Switch, Route, HashRouter } from 'react-router-dom';
-import { MasterPage, TasksPage, ThreePage, MainPage } from './pages';
+import { InfoPage, TasksPage, ThreePage, MainPage } from './pages';
 
 import './assets/scss/index.scss';
 
@@ -19,11 +19,8 @@ function App() {
 						<Route path='/tasks'>
 							<TasksPage />
 						</Route>
-						<Route path='/toolbox'>
-							<MasterPage />
-						</Route>
 						<Route path='/info'>
-							<ThreePage />
+							<InfoPage />
 						</Route>
 					</Switch>
 				</div>
