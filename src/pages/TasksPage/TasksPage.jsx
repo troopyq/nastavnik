@@ -17,15 +17,15 @@ import './TasksPage.scss';
 import instagram from './icons/instagram2.png';
 import youtube from './icons/youtube2.png';
 import telegram from './icons/telegram2.png';
-import i21 from './Modals/icons/21.png';
-import i22 from './Modals/icons/22.png';
-import i23 from './Modals/icons/23.png';
-import i31 from './Modals/icons/31.png';
+import i21 from './Modals/icons/21-n.png';
+import i22 from './Modals/icons/22-n.png';
+import i23 from './Modals/icons/23-n.png';
+import i31 from './Modals/icons/31-n.png';
 import i32 from './Modals/icons/32.png';
 import i33 from './Modals/icons/33.png';
-import i41 from './Modals/icons/41-n.png';
-import i42 from './Modals/icons/42-n.png';
-import i43 from './Modals/icons/43-n.png';
+import i41 from './Modals/icons/41-nn.png';
+import i42 from './Modals/icons/42-nn.png';
+import i43 from './Modals/icons/43-nn.png';
 
 function TasksPage() {
 	const [modal, setModal] = useState(null);

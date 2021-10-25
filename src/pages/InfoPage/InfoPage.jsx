@@ -4,8 +4,8 @@ import TaskBlock from '../TasksPage/TaskBlock';
 import Info1 from '../TasksPage/Modals/Info1';
 import Info2 from '../TasksPage/Modals/Info2';
 
-import i1 from '../TasksPage/Modals/icons/info1.png';
-import i2 from '../TasksPage/Modals/icons/21.png';
+import i1 from '../TasksPage/Modals/icons/info1-n.png';
+import i2 from '../TasksPage/Modals/icons/info2.png';
 
 import '../TasksPage/TasksPage.scss';
 
